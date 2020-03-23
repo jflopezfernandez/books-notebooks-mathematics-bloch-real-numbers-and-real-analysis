@@ -1,0 +1,27 @@
+\section{The Derivative}
+\begin{definition}
+	\label{definition-4.2.1}
+	Let $I \subseteq \mathbb{R}$ be an open interval, let $c \in I$, and let $f~:~I~\to~\mathbb{R}$ be a function.
+	\begin{enumerate}
+		\item The function $f$ is \textbf{differentiable} at $c$ if
+		\begin{equation}
+		\label{equation-definition-4.2.1}
+		\lim\limits_{x \to c} \frac{f(x) - f(c)}{x - c}
+		\end{equation}
+		exists; if this limit exists, it is called the \textbf{derivative} of $f$ at $c$, and it is denoted $f^\prime (c)$.
+		\item The function $f$ is \textbf{differentiable} if it is differentiable at every number in $I$. If $f$ is differentiable, the \textbf{derivative} of $f$ is the function $f^\prime : I \to \mathbb{R}$ whose value at $x$ is $f^\prime (x)$ for all $x \in I$.
+	\end{enumerate}
+\end{definition}
+
+\begin{lemma}
+	\label{lemma-4.2.2}
+	Let $I \subseteq \mathbb{R}$ be an open interval, let $c \in I$, and let $f:I\to\mathbb{R}$ be a function. Then $f$ is differentiable at $c$ if and only if
+	\begin{equation}
+	\label{equation-lemma-4.2.2}
+	\lim\limits_{h \to 0} \frac{f \left( c + h \right) - f \left( c \right)}{h}
+	\end{equation}
+	exists, and if this limit exists it equals $f^\prime \left( c \right)$.
+\end{lemma}
+
+\subsection{Exercises}
+\input{chapters/chapter-4/section-2/exercises/exercise-1.tex}
