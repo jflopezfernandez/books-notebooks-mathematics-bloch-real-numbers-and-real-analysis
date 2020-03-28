@@ -1,0 +1,21 @@
+\begin{exercise}
+	\index{fixed point}
+	Let $\left[ a, b \right] \subseteq \mathbb{R}$ be a closed bounded interval, and let $f:\left[ a, b \right] \to \left[ a, b \right]$ be a function. Suppose that $f$ is continuous. Prove that there is some $c \in \left[ a, b \right]$ such that $f\left(c\right) = c$. The number $c$ is called a \textbf{fixed point} of $f$.
+\end{exercise}
+\begin{proposition}[Existence of a Fixed Point in a Compact Interval of $\mathbb{R}$]
+	Let $\left[ a, b \right] \subseteq \mathbb{R}$ be a closed bounded interval, and let $f:\left[a,b\right]\to\left[a,b\right]$ be a continuous function. There exists a \textbf{fixed point} $c \in \left[a,b\right]$ such that $f\left(c\right)=c$.
+\end{proposition}
+\begin{proof}
+	The function $f$ is an endomorphism, as its codomain is exactly its domain, and thus the image of $f$ is a subset of $\left[ a, b \right]$. We can infer from this that $f\left(a\right) \geq a$ and $f\left(b\right) \leq b$.
+	\newline\newline
+	We now define a new function, $g : \left[ a, b \right] \to \mathbb{R}$, where $g\left(x\right) = f\left(x\right) - x$ for all $x \in \left[ a, b \right]$. We began by supposing $f$ is continuous, and we know $x$ is continuous from $a$ to $b$, since $\left[ a, b \right]$ is a closed bounded interval. Therefore, by Theorem~\ref{theorem-3.3.5}, $g$ is continuous.
+	\newline\newline
+	Using our inference that $f\left(a\right) \geq a$ and $f\left(b\right) \leq b$ we deduce that $g\left(a\right) \geq 0$ and $g\left(b\right) \leq 0$.
+	\begin{align*}
+	f\left(a\right) &\geq a & f\left(b\right) &\leq b \\
+	f\left(a\right) - a &\geq a - a & f\left(b\right) - b &\leq b - b \\
+	f\left(a\right) - a &\geq 0 & f\left(b\right) - b &\leq 0 \\
+	g\left(a\right) &\geq 0 & g\left(b\right) &\leq 0
+	\end{align*}
+	By the Intermediate Value Theorem (Theorem~\ref{theorem-3.5.2}), there exists some $\xi \in \left[ a, b \right]$ such that $g\left(\xi\right)=0$. By the definition of $g$, this means that $f\left(\xi\right)=\xi$, completing the proof.
+\end{proof}
