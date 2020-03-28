@@ -1,0 +1,16 @@
+\begin{exercise}
+	Prove that $\exp x \geq 1 + x$ for all $x \in \left( 0, \infty \right)$.
+\end{exercise}
+\begin{proposition}
+	If $\ln^{-1}\left(x\right) = \exp x$, then $\exp x \geq 1 + x$ for all $x \in \left( 0, \infty \right)$.
+\end{proposition}
+\begin{proof}
+	While the value of $\exp x$ when $x$ equals zero is outside the domain we are given, $0$ is the greatest lower bound of our interval. By Theorem~\ref{theorem-7.2.2}, $\exp x$ is strictly increasing, and therefore $\exp x \geq \exp 0$ for all $x \in \left( 0, \infty \right)$.
+	\newline\newline
+	By Definition~\ref{definition-7.2.1}, $\ln 1 = 0$, and therefore $\exp 0 = 1$. We now differentiate both sides of the inequality to determine which expression increases more with respect to $x$. Since both expressions are equal when $x$ equals zero, the derivative is the sole factor in determining whether the inequality is true.
+	\begin{align*}
+	\frac{d}{dx}\left(\exp x\right) &\geq \frac{d}{dx}\left(1+x\right)\\
+	\exp x &\geq 1
+	\end{align*}
+	Once again, since we know that $\exp 0 = 1$ and $\exp x$ is strictly increasing, we can conclude that $\exp x \geq 1 + x$ for all $x \in \left( 0, \infty \right)$.
+\end{proof}
